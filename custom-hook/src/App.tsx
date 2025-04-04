@@ -15,9 +15,7 @@ function App() {
             Loading...
           </div>
         ) : (
-          data.map(() => (
-            
-          ))
+          data
         )
       }
     </div>
