@@ -10,18 +10,18 @@ const Accordion = () => {
     { title: "Title 4", content: "Content for section 4" },
   ];
 
-  const handleOnClick = (index: number) => {
+  const toggleAccordian = (index: number) => {
     setClickedAccordion(clickedAccordion === index ? null : index);
   };
 
   return (
-    <div className="max-w-lg mx-auto mt-10 space-y-2">
+    <div className="max-w-lg mx-auto mt-10 space-y-4">
       {data.map((item, index) => (
-        <div key={index} className="border rounded-lg overflow-hidden shadow-md">
+        <div key={index} className="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
           {/* Accordion Header */}
           <button
             className="w-full p-4 text-left bg-gray-100 hover:bg-gray-200 font-medium text-lg transition-all duration-300 flex justify-between items-center"
-            onClick={() => handleOnClick(index)}
+            onClick={() => toggleAccordian(index)}
           >
             {item.title}
             <span className={`transform transition-transform ${clickedAccordion === index ? "rotate-180" : "rotate-0"}`}>
