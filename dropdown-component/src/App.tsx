@@ -18,7 +18,6 @@ const App = () => {
 
   return (
     <div className="p-8 max-w-md mx-auto bg-white rounded-xl shadow-md space-y-8">
-        <h1 className="text-2xl font-bold text-gray-800">Styled Dropdown</h1>
         <div className="space-y-4">
             <h2 className="text-lg font-medium text-gray-700">Primary Variant</h2>
             <Dropdown 
