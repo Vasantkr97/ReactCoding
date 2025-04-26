@@ -80,7 +80,7 @@ function App() {
 
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen bg-blue-100">
+      <div className="flex items-center justify-center min-h-screen bg-blue-300">
         <div className="w-80 p-6 rounded-lg shadow-lg text-center">
         <input 
           type="text"
